@@ -40,7 +40,7 @@ jobs:
               uses: ballerina-platform/ballerina-action/@nightly
               with:
                   args:
-                      build -c ./sqs
+                      build -c --skip-tests ./sqs
               env:
                 JAVA_HOME: /usr/lib/jvm/default-jvm
                 ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY_ID }}
